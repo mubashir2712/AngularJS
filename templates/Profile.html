@@ -1,0 +1,42 @@
+<div>
+        <table>
+        <td><select ng-model="selectedName" ng-click = "change()" ng-options="item for item in names">
+                <option value="">--Select--</option>
+        </select>
+        </td>
+        </table>
+    <form>
+    <tr>
+    <td><b> Profile Name </td> </b><br>
+    <td ng-hide = flag> {{ProfileName}} </td>
+    <td> <input type = "text" placeholder = "Profile Name" ng-model = "ProfileName1" ng-hide = flag /></td>
+    </tr>
+    <br><br>
+    <tr>
+    <td><b> Name </td> </b><br>
+    <td ng-show = flag > {{firstName}}</td>
+    <td > <input type = "text" placeholder = "Your Name" ng-model = "firstName1" ng-hide = flag /></td>
+    </tr>
+    <br><br>
+    <tr>  
+    <td><b> Mobile number </b></td> <br>
+    <td ng-show = flag > {{phoneNo}} </td>
+    <td> <input type = "text" placeholder = "mobile" ng-model = "phoneNo1" maxlength="10" ng-hide = flag /></td>
+    </tr>
+    <br><br>
+    <tr>
+    <td><b> Email </b></td><br>
+    <td ng-show = flag > {{emailId}} </td>
+    <td> <input type = "text" placeholder = "email" ng-model = "emailId1" ng-hide = flag /></td>
+    </tr>
+    <br><br>
+    <td><b> password </b></td><br>
+    <td> <input type = "text" placeholder = "password" ng-model = "pass1" ng-hide = flag /></td>
+    </tr>
+    <br><br>
+    <button class = "registerbtn" ng-click = "pressed()" ng-show= flag >UpdateProfile</button>
+    <button class = "registerbtn" ng-click = "pressed1()" ng-hide= flag >Update Profile</button>
+    <br><br>
+</form>
+
+</div>    

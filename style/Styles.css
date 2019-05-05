@@ -1,0 +1,201 @@
+body{
+    background-color: lightblue;
+}
+
+.center{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 10px;
+    margin: 1px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.alignleft {
+    float: left;
+    background-color: greenyellow;
+    color: white;
+    padding: 8px 10px;
+    margin: 1px 0;
+    border: solid;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.alignright {
+    float: right;
+    background-color: greenyellow;
+    color: white;
+    padding: 8px 10px;
+    margin: 1px 0;
+    border: solid;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.registerbtn:hover {
+    opacity: 1;
+}
+
+h6{
+    color: blueviolet;
+}
+
+h1{
+    background: lightsteelblue;
+    color: blue;
+}
+
+.headers{
+    text-indent: 100%
+}
+
+.border{
+    border-style: solid;
+    
+}
+
+.commentBorder{
+    border-style: outset;
+    border-color : gray
+}
+
+.StackOverflow{
+    background-color:rgb(239, 240, 241);
+    border-bottom-color:rgb(57, 51, 24);
+    border-bottom-style:none;
+    border-bottom-width:0px;
+    border-image-outset:0px;
+border-image-repeat:
+stretch
+;
+border-image-slice:
+100%
+;
+border-image-source:
+none
+;
+border-image-width:
+1
+;
+border-left-color:
+rgb(57, 51, 24)
+;
+border-left-style:
+none
+;
+border-left-width:
+0px
+;
+border-right-color:
+rgb(57, 51, 24)
+;
+border-right-style:
+none
+;
+border-right-width:
+0px
+;
+border-top-color:
+rgb(57, 51, 24)
+;
+border-top-style:
+none
+;
+border-top-width:
+0px
+;
+box-sizing:
+border-box
+;
+color:
+rgb(57, 51, 24)
+;
+display:
+block
+;
+font-family:
+    Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif
+    ;
+    font-size:
+    13px
+    ;
+    font-stretch:
+    100%
+    ;
+    font-style:
+    normal
+    ;
+    font-variant-caps:
+    normal
+    ;
+    font-variant-east-asian:
+    normal
+    ;
+    font-variant-ligatures:
+    normal
+    ;
+    font-variant-numeric:
+    normal
+    ;
+    font-weight:
+    400
+    ;
+    height:
+    330px
+    ;
+    line-height:
+    16.9px
+    ;
+    margin-bottom:
+    13px
+    ;
+    margin-left:
+    300px
+    ;
+    margin-right:
+    300px
+    ;
+    margin-top:
+    0px
+    ;
+    max-height:
+    600px
+    ;
+    overflow-wrap:
+    normal
+    ;
+    overflow-x:
+    auto
+    ;
+    overflow-y:
+    auto
+    ;
+    padding-bottom:
+    5px
+    ;
+    padding-left:
+    5px
+    ;
+    padding-right:
+    5px
+    ;
+    padding-top:
+    5px
+    ;
+    vertical-align:
+    baseline
+    ;
+    white-space:pre;
+    width: 800px;
+    text-align:
+    center
+    ;
+
+}

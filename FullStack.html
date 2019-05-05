@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src = "scripts/angular.min.js"></script>
+    <script src = "scripts/angular-route.min.js"></script>
+    <script src = "scripts/angular-resource.js"></script>
+   <!-- <script src = "scripts/FullStack.js"></script> -->
+    <script src = "scripts/FullStackWithResource.js"></script>
+    <link href="style/Styles.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body ng-controller = "myController">
+<!--
+    <table>
+        <tr>
+            <td> UserNam </td>
+            <td> <input type = "text" placeholder = "Username or Email" ng-model = "UserName" required /></td>
+            </tr>
+            <br><br>
+            <tr>
+               <td> Password </td>
+               <td> <input type = "password" placeholder = "Enter Password" ng-model = "password" required /></td>
+            </tr>
+            <br><br>
+        <tr>
+        <td>
+        <a href = "#!/Register">Register</a><br>
+        <a href = "#!/Profile" ng-click = "submit($event)">Profile</a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+                <ng-view>
+
+                </ng-view>
+        </td>
+        </tr>
+        </table>
+-->
+<div class = center>
+        Hello {{user}}
+        <h1>FakeBook</h1>
+<td>
+        <ng-view>
+
+        </ng-view>
+</td>
+<br>
+
+<td><button class = "registerbtn" ng-click = LogIn('in')  ng-show = flagLogin>Log In Page</button></td>
+<td><button class = "registerbtn" ng-click = LogIn('out') ng-hide = flagLogin>Log Out</button></td>
+<h6>Don't have account? Please register here</h6>
+<a href = "#!/Register" ng-click = "pressed()" >Register</a><br>
+</div>
+
+</body>
+</html>

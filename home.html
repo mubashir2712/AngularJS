@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src = "scripts/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src = "scripts/angular-route.min.js"></script>
+    <script src = "scripts/loginScript.js"></script>
+    <link href="style/Styles.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+        <td>
+        <a href = "#!/Register">Register</a><br>
+        <a href = "#!/login">LogIn</a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+                <ng-view>
+
+                </ng-view>
+        </td>
+        </tr>
+        </table>
+</body>
+</html>

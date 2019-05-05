@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/Sorting.js"></script>
+    <title>Document</title>
+    </head>
+<body ng-controller = "myController">
+<div>
+    Column for Sorting :
+    <select ng-model = "prop">
+        <option value = "name">Name</option>
+        <option value = "dob">DOB</option>
+        <option value = "gender">Gender</option>
+        <option value = "Salary">Salary</option>
+      </select>
+    <input type = "text" ng-model = "test"/>  
+    <input type = "checkbox" ng-model = "exactMatch"/>
+    <table>
+      <thead>
+        <tr>
+            <th ng-click = "sortData('name')">
+            Name</th>
+            <th ng-click = "sortData('dob')">
+            DOB</th>
+            <th ng-click = "sortData('gender')">
+            Gender</th>
+            <th ng-click = "sortData('-Salary')" ng-hide = "exactMatch">
+            Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat = "employee in employees">
+          <td> {{employee.name}} </td>
+          <td> {{employee.dob | date : "dd/MM/yyyy"}} </td>
+          <td> {{employee.gender}} </td>
+          <td ng-hide = "exactMatch"> {{employee.Salary}} </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</body>
+</html>

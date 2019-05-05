@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src = "scripts/angular.min.js"></script>
+    <script src = "scripts/angular-route.min.js"></script>
+    <script src = "scripts/angular-resource.js"></script>
+    <script src = "scripts/FullStackWithResource.js"></script>
+    <link href="style/Styles.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body ng-controller = "RegisterController">
+                <h1 class="center">FakeBook</h1>
+                <br><br><br><br>
+                <tr class="alignleft">
+                    {{message}}
+                </tr>
+            <form class="alignleft">
+                <tr>
+                <td><b> Profile Name </td> </b><br>
+                <td > <input type = "text" placeholder = "Profile Name" ng-model = "profileName" required/></td>
+                </tr>
+                <br><br>
+                <tr>
+                <td><b> Name </td> </b><br>
+                <td > <input type = "text" placeholder = "Your Name" ng-model = "userId" required/></td>
+                </tr>
+                <br><br>
+                <tr>  
+                <td><b> Mobile number </b></td> <br>
+                <td> <input type = "text" placeholder = "mobile" ng-model = "mobile" maxlength="10" required/></td>
+                </tr>
+                <br><br>
+                <tr>
+                <td><b> Email </b></td><br>
+                <td> <input type = "text" placeholder = "email" ng-model = "email" required/></td>
+                </tr>
+                <br><br>
+                <tr>
+                <td><b> Password </b></td><br>
+                <td> <input type = "password" placeholder = "atleast 6 characters" ng-model = "pass1" required/></td>
+                </tr>
+                <br><br>
+                <td><b> Confirm Password </b></td><br>
+                <td> <input type = "password" placeholder = "atleast 6 characters" ng-model = "pass2" required/></td>
+                </tr>
+                <br><br>
+                <button ng-click = "pressed()" class = "registerbtn">Submit</button>
+                <br><br>
+            </form>
+                <h5 class="alignleft">already a member?</h5>
+                <a href = "FullStack.html" class="alignleft">Sign In</a>
+        
+           
+</body>
+</html>

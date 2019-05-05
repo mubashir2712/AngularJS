@@ -1,0 +1,82 @@
+<div>
+    <td>Welcome {{user}}</td>
+    <br><br>
+    {{profileMessage}}
+    <table class = "alignleft">
+       <thead>
+           <tr>
+               <br><br><br><br><br>
+           </tr>    
+       </thead>
+       <tbody>
+            <tr ng-repeat = "profile in profiles">
+            <td><b>{{profile.profileName}}<b></td>
+            <td><a href = "" ng-click = "AddFriend(profile.profileName)">Add</a></td>
+           </tr>
+       </tbody>
+
+    </table>
+    
+    <table class = "alignright">
+            <thead>
+                <tr>
+                <td>FriendList</td>
+                </tr>    
+            </thead>
+            <tbody>
+                 <tr ng-repeat = "friends in friendList">
+                 <td>{{friends.profileName}}</td>
+                </tr>
+            </tbody>
+     
+    </table> 
+
+    <table>
+    <td><select ng-model="selectedName" ng-click = "change()" ng-options="item for item in names">
+        <option value="">--Select--</option>
+    </select></td>
+    </table>
+    <tr><td>You can post here</td>
+        <br>
+        <td><textarea rows="4" cols="50" placeholder="Write Something here" ng-model = "messages"></textarea>
+        </td>
+        <br><br>
+    </tr>   
+        <button ng-click = submit() class = "registerbtn"> Submit </button><br>
+    
+        {{messageResponse}}
+<br><br>
+<td>{{commentResponse}}</td>
+    <div ng-repeat="res in result | orderBy : '-created'" class = "StackOverflow">
+    <table>
+        <tr>
+        <td>{{res.author}}</td>
+        </tr>
+        <tr>
+        <td><h6>{{res.created | date : 'medium'}}</h6></td>
+        <tr>
+      <tr>
+      <td>{{res.message}}</td>
+      </tr>
+      <tr>
+      <td><button ng-click = "increamentLikes(res)" class = "registerbtn" > Like </button></td>
+      <td>{{res.likes}}</td>
+      </tr>
+      <tr>
+      <td><button ng-click = "increamentDisLikes(res)" class = "registerbtn" > DisLike </button></td>
+      <td>{{res.dislikes}}</td>
+      </tr>
+    </table>
+      <b>Comments:</b>
+      
+      <div>
+            <form  name="myForm" ng-submit = "setMessageId(res.id,comment)">
+            <input type="text" placeholder="input your comment here" ng-model = "comment" />  
+            </form>
+            <!--<button ng-click = commented(comment) class = "registerbtn" > Submit </button><br>-->
+          </div>
+      <div ng-repeat="value in res.comments ">
+      <h6> {{ value.author }} {{ value.created | date : 'medium'}} </h6>
+      <b>{{ value.message }}</b>
+    </div>   
+</div>

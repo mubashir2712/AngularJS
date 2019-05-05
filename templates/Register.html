@@ -1,0 +1,37 @@
+{{message1}}
+Pristine: {{RegisterForm.$pristine}}
+<br><br>
+<form name = "RegisterForm" id = "RegisterForm" novalidate >
+    <tr>
+    <td><i><b> Profile Name </td></i> </b><br>
+    <td > <input type = "text" placeholder = "Profile Name" ng-model = "profileName" required/></td>
+    </tr>
+    <br><br>
+    <tr>
+    <td><i><b> Name </td> </b></i><br>
+    <td > <input type = "text" placeholder = "Your Name" ng-model = "userId" required/></td>
+    </tr>
+    <br><br>
+    <tr>  
+    <td><i><b> Mobile number </b></i></td><br>
+    <td> <input type = "text" placeholder = "mobile" ng-model = "mobile" maxlength="10" required/></td>
+    </tr>
+    <br><br>
+    <tr>
+    <td><i><b> Email </b></i></td><br>
+    <td> <input type = "text" placeholder = "email" ng-model = "email" required/></td>
+    </tr>
+    <br><br>
+    <tr>
+    <td><i><b> Password </b></i></td><br>
+    <td> <input type = "password" placeholder = "atleast 6 characters" ng-model = "pass1" required/></td>
+    </tr>
+    <br><br>
+    <td><i><b> Confirm Password </b></i></td><br>
+    <td> <input type = "password" placeholder = "atleast 6 characters" ng-model = "pass2" required/></td>
+    </tr>
+    <br><br>
+    <button ng-click = "pressed()" class = "registerbtn">Submit</button>
+    <br><br>
+</form>
+    <h5>already a member?</h5>
